@@ -1,0 +1,29 @@
+{
+  "locales_propios_daily_maalign_prophet": {
+    "freq": "D",
+    "model_type": "prophet",
+    "growth": "linear",
+    "seasonality_mode": "additive",
+    "yearly_seasonality": true,
+    "weekly_seasonality": true,
+    "daily_seasonality": false,
+    "regressors": [
+      "ma_align"
+    ],
+    "ma_window_days": 7,
+    "clip_lower": 0
+  },
+  "franquicias_weekly_gapsmooth_prophet": {
+    "freq": "W",
+    "model_type": "prophet",
+    "growth": "linear",
+    "seasonality_mode": "additive",
+    "yearly_custom": true,
+    "regressors": [
+      "gap_smooth",
+      "is_event_week"
+    ],
+    "week_rule": "W-SUN",
+    "clip_lower": 0
+  }
+}
